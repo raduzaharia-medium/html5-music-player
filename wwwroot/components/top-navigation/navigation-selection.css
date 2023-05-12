@@ -1,0 +1,14 @@
+navigation-selection {
+  cursor: pointer;
+  width: max-content;
+  margin: 0 auto;
+}
+
+navigation-selection img {
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+navigation-selection span {
+  vertical-align: middle;
+}

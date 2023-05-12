@@ -1,0 +1,48 @@
+artist-browser {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: minmax(16em, 1fr) 1.6fr 1fr;
+
+    position: absolute;
+    left: 3em;
+    right: 3em;
+    top: 6em;
+    bottom: 6em;
+}
+
+artist-browser #songs .artist {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    artist-browser {
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    artist-browser list-section#albums {
+        display: none;
+    }
+}
+
+@media (max-width: 710px) {
+    artist-browser {
+        grid-template-columns: 1fr;
+
+        left: 1em;
+        right: 1em;
+        top: 4em;
+        bottom: 0;
+    }
+
+    artist-browser list-section#songs {
+        display: none;
+    }
+
+    artist-browser.artist-selected list-section#artists {
+        display: none;
+    }
+
+    artist-browser.artist-selected list-section#songs {
+        display: block;
+    }
+}

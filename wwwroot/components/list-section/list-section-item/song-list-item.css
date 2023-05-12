@@ -1,0 +1,33 @@
+song-list-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: clip;
+  margin-bottom: 0.6em;
+  cursor: pointer;
+}
+
+song-list-item .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+song-list-item .artist {
+  color: var(--text-color-light);
+  vertical-align: middle;
+}
+
+song-list-item img {
+  width: 1.4em;
+  height: 1.4em;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+
+@media (max-width: 710px) {
+  song-list-item .artist {
+    display: block;
+    margin-left: 2em;
+  }
+}

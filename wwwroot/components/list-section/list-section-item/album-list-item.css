@@ -1,0 +1,50 @@
+album-list-item {
+  display: inline-block;
+  width: 7em;
+  margin-right: 1em;
+}
+
+album-list-item img {
+  width: 5em;
+  height: 5em;
+  padding: 1.4em 1em 0.4em 1em;
+  border-radius: 0.4em;
+}
+
+album-list-item legend {
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+album-list-item strong {
+  display: block;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+album-list-item span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  album-list-item {
+    width: 100%;
+    height: initial;
+  }
+
+  album-list-item legend {
+    max-width: 23em;
+    text-align: left;
+  }
+
+  album-list-item img {
+    display: none;
+  }
+
+  album-list-item strong {
+    font-weight: 400;
+  }
+}

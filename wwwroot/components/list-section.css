@@ -1,0 +1,110 @@
+list-section {
+    position: relative;
+}
+
+list-section input {
+    position: relative;
+    display: none;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 100;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+list-section.has-input input {
+    display: block;
+}
+
+list-section ul {
+    padding-right: 1em;
+    padding-left: 0;
+    margin: 0;
+    border-right: 1px solid var(--border-color);
+    position: absolute;
+    overflow-x: hidden;
+    top: 2em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+list-section ul.alternate-odd li:nth-child(odd) {
+    background-color: #0001;
+}
+
+list-section li {
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: clip;
+    margin-bottom: 0.6em;
+}
+
+list-section li.selected {
+    text-shadow: var(--selection-shadow-light);
+}
+
+list-section li.hidden {
+    display: none;
+}
+
+list-section li strong {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+list-section.has-subtitle ul,
+list-section.has-input ul {
+    top: 4em;
+}
+
+list-section.has-subtitle.has-input ul {
+    top: 6em;
+}
+
+list-section span.subtitle {
+    font-weight: 400;
+    padding: 0.2em 0;
+    display: block;
+    margin-bottom: 0.8em;
+    font-size: 1.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+list-section.no-border-right ul {
+    border-right: none;
+}
+
+list-section list-section-skeleton {
+    display: none;
+}
+
+list-section.loading ul,
+list-section.loading input {
+    display: none;
+}
+
+list-section.loading list-section-skeleton {
+    display: block;
+}
+
+@media (max-width: 710px) {
+    list-section ul {
+        border-right: none;
+        top: 0;
+    }
+
+    list-section.has-input ul,
+    list-section.has-subtitle.has-input ul {
+        top: 2em;
+    }
+
+    list-section span.subtitle,
+    list-section list-section-header {
+        display: none;
+    }
+}

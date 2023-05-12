@@ -1,0 +1,18 @@
+list-section-header {
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+    display: flex;
+}
+
+list-section-header strong {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-right: auto;
+}
+
+@media (max-width: 710px) {
+    list-section-header {
+        display: none;
+    }
+}

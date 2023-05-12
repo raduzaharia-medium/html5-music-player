@@ -1,0 +1,30 @@
+top-navigation {
+    text-align: right;
+    font-weight: 100;
+    font-size: 2em;
+    color: var(--text-color-light);
+    text-transform: lowercase;
+}
+
+top-navigation navigation-selection {
+    display: none;
+}
+
+@media (max-width: 710px) {
+    top-navigation {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 300;
+        filter: drop-shadow(var(--selection-shadow));
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    top-navigation[selection]:not([selection=""]) navigation-items {
+        display: none;
+    }
+
+    top-navigation[selection]:not([selection=""]) navigation-selection {
+        display: block;
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "imports": {
+    "top-navigation": "/components/top-navigation.js",
+    "top-navigation/navigation-items": "/components/top-navigation/navigation-items.js",
+    "top-navigation/navigation-selection": "/components/top-navigation/navigation-selection.js",
+
+    "list-section": "/components/list-section.js",
+    "list-section/header": "/components/list-section/list-section-header.js",
+    "list-section/list-section-skeleton": "/components/list-section/list-section-skeleton.js",
+
+    "list-section/list-section-item": "/components/list-section/list-section-item.js",
+    "list-section/artist-list-item": "/components/list-section/list-section-item/artist-list-item.js",
+    "list-section/album-list-item": "/components/list-section/list-section-item/album-list-item.js",
+    "list-section/song-list-item": "/components/list-section/list-section-item/song-list-item.js",
+    "list-section/genre-list-item": "/components/list-section/list-section-item/genre-list-item.js",
+
+    "artist-browser": "/components/browsers/artist-browser.js",
+    "album-browser": "/components/browsers/album-browser.js",
+    "genre-browser": "/components/browsers/genre-browser.js",
+    "song-browser": "/components/browsers/song-browser.js",
+
+    "audio-player": "/components/audio-player.js",
+
+    "services": "/scripts/services.js"
+  }
+}

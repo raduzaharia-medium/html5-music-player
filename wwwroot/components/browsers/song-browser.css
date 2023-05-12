@@ -1,0 +1,20 @@
+song-browser {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: 1fr;
+
+    position: absolute;
+    left: 3em;
+    right: 3em;
+    top: 6em;
+    bottom: 6em;
+}
+
+@media (max-width: 710px) {
+    song-browser {
+        left: 1em;
+        right: 1em;
+        top: 4em;
+        bottom: 0;
+    }
+}

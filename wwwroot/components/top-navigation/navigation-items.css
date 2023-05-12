@@ -1,0 +1,41 @@
+navigation-items {
+  display: block;
+  width: 100%;
+}
+
+navigation-items ul {
+  margin: 0;
+}
+
+navigation-items select {
+  display: none;
+  background-image: url(../../images/dark/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-color: transparent;
+  padding-right: 1.4em;
+  text-align: right;
+  margin-inline: 0.4em;
+  vertical-align: middle;
+}
+
+navigation-items li {
+  cursor: pointer;
+  display: inline;
+  margin: 0.2em;
+}
+
+navigation-items .selected {
+  color: var(--text-color);
+  text-shadow: var(--selection-shadow-light);
+}
+
+@media (max-width: 710px) {
+  navigation-items ul {
+    display: none;
+  }
+
+  navigation-items select {
+    display: initial;
+  }
+}
